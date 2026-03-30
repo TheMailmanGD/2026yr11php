@@ -1,7 +1,5 @@
 <?php
 include_once "indexHeader.php";
-include_once "indexMenubar.php";
-include_once "container_start.php";
 ?>
 
 <h1>Variables</h1>
@@ -27,6 +25,7 @@ include_once "container_start.php";
 
  echo ("<br> 22/7 is " . round(22/7, 2) . " when rounded to 2 decimal places.");
  ?>
+
 <?php
 include_once "container_end.php";
 include_once "indexFooter.php";

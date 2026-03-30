@@ -1,8 +1,6 @@
 <?php
 include_once "indexHeader.php";
-include_once "indexMenubar.php";
 include_once "indexCarousel.php";
-include_once "container_start.php";
 ?>
 <!-- Marketing messaging and featurettes
   ================================================== -->

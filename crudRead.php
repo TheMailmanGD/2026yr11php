@@ -1,10 +1,8 @@
 <?php
 include_once "indexHeader.php";
 ?>
-<h1>Decisions</h1>
-<!-- if elseif else -->
+<h1>CRUD Read</h1>
 
-<!-- switch case -->
 
 <?php
 include_once "container_end.php";

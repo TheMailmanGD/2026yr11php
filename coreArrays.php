@@ -1,9 +1,14 @@
 <?php
 include_once "indexHeader.php";
-include_once "indexMenubar.php";
-include_once "container_start.php";
 ?>
 <h1>Arrays</h1>
+<!-- 1 dimensional array -->
+
+<!-- 2 dimensional array (e.g. matrices) -->
+
+<!-- foreach loop (made for array specifically) -->
+
+<!-- while loop with array -->
 <?php
 include_once "container_end.php";
 include_once "indexFooter.php";

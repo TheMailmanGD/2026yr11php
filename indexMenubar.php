@@ -31,6 +31,15 @@
                   <a class="dropdown-item" href="coreArrays.php">Arrays</a>
                 </div>
               </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">CRUD</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown01">
+                  <a class="dropdown-item" href="crudCreate.php">Create</a>
+                  <a class="dropdown-item" href="crudRead.php">Read</a>
+                  <a class="dropdown-item" href="crudUpdate.php">Update</a>
+                  <a class="dropdown-item" href="crudDelete.php">Delete</a>
+                </div>
+              </li>
             </ul>
             <form class="d-flex" role="search">
               <input

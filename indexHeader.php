@@ -118,3 +118,8 @@
         </li>
       </ul>
     </div>
+<?php
+include_once "indexMenubar.php";
+include_once "container_start.php";
+include_once "connect.php";
+?>
