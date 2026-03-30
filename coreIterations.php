@@ -10,6 +10,5 @@ include_once "indexHeader.php";
 
 <!-- do while loop -->
 <?php
-include_once "container_end.php";
 include_once "indexFooter.php";
 ?>

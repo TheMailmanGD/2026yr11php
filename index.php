@@ -202,6 +202,5 @@ include_once "indexCarousel.php";
       </div>
       <!-- /.container -->
 <?php
-include_once "container_end.php";
 include_once "indexFooter.php";
 ?>

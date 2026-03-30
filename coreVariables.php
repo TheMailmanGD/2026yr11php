@@ -27,6 +27,5 @@ include_once "indexHeader.php";
  ?>
 
 <?php
-include_once "container_end.php";
 include_once "indexFooter.php";
 ?>
