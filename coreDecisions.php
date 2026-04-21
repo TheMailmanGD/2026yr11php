@@ -26,7 +26,23 @@ else {
 ?>
 
 <!-- switch case -->
+<?php
+$favcolor = "3";
 
+switch ($favcolor) {
+  case "1":
+    echo "1";
+    break;
+  case "2":
+    echo "2";
+    break;
+  case "3":
+    echo "3";
+    break;
+  default:
+    echo "this number is not 1, 2 or 3";
+}
+?>
 <?php
 include_once "indexFooter.php";
 ?>

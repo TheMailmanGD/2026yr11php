@@ -18,7 +18,7 @@
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="index.php">Home</a>
               </li>
-              <li class="nav-item"><a class="nav-link" href="https://www.chattrath.com.au/allProjects/recipe/plain_rice.php" target="_blank">Bobby's Recipes</a></li>
+              <li class="nav-item"><a class="nav-link" href="https://www.chattrath.com.au/allProjects/recipe" target="_blank">Bobby's Recipes</a></li>
               <li class="nav-item">
                 <a class="nav-link disabled" aria-disabled="true">Disabled</a>
               </li>
