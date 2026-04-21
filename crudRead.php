@@ -40,7 +40,6 @@ if($result){ // querry runs
 }
 $output .=  "</table>";
 echo ($output);
-
 ?>
 <?php
 include_once "indexFooter.php";
