@@ -27,9 +27,9 @@ else {
 
 <!-- switch case -->
 <?php
-$favcolor = "3";
+$y = "3";
 
-switch ($favcolor) {
+switch ($y) {
   case "1":
     echo "1";
     break;
