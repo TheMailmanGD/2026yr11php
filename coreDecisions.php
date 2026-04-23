@@ -42,6 +42,15 @@ switch ($y) {
   default:
     echo "this number is not 1, 2 or 3";
 }
+
+//match case(more readable switch, returns value in variable)
+$z = match ($y) {
+    "1" => "1";
+    "2" => "2";
+    "3" => "3";
+    default => "this number is not 1, 2 or 3";
+}
+echo($z)
 ?>
 <?php
 include_once "indexFooter.php";
