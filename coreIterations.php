@@ -8,7 +8,7 @@ include_once "indexHeader.php";
 <?php
 //definition -> condition -> increment
 for ($i = 0; $i <= 10; $i++) {
-  echo ($x);
+  echo ($i);
 }
 ?>
 <!-- while do loop -->
