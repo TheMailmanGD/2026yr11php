@@ -11,7 +11,7 @@ for ($i = 0; $i <= 10; $i++) {
   echo ($i);
 }
 ?>
-<!-- while do loop -->
+<!-- while loop -->
 <?php
 $i = 1;
 while ($i <= 10) {

@@ -18,9 +18,19 @@ echo $twodimensionalarray[2][0]."'s ".$twodimensionalarray[2][1]."is ".$twodimen
 ?>
 <!-- foreach loop (made for array specifically) -->
 <?php
+// foreach ($array as $x) {
+//   echo $x;
+// }
+$array = array("thing1", "thing2", "thing3", "thing4");
 
+foreach ($array as $value) {
+  echo $value;
+}
 ?>
 <!-- while loop with array -->
+<?php
+
+?>
 <?php
 include_once "indexFooter.php";
 ?>
