@@ -8,4 +8,8 @@
       class="astro-vvvwv3sm"
     ></script>
   </body>
+
+  <?php
+  //$conn->close()
+  ?>
 </html>

@@ -29,7 +29,14 @@ foreach ($array as $value) {
 ?>
 <!-- while loop with array -->
 <?php
+$stuff = ["cheese", "box", "car", "planet"];
+$i = 0;
+$length = count($stuff);
 
+while ($i < $length) {
+    echo $stuff[$i];
+    $i++;
+}
 ?>
 <?php
 include_once "indexFooter.php";
