@@ -7,16 +7,16 @@ include_once "indexHeader.php";
 <!-- for loop -->
 <?php
 //definition -> condition -> increment
-for ($i = 0; $i <= 10; $i++) {
+for ($i = 1; $i <= 10; $i++) {
   echo ($i);
 }
 ?>
 <!-- while loop -->
 <?php
-$i = 1;
-while ($i <= 10) {
+$i = 0;
+while ($i < 10) {
     $i++; 
-    echo i;
+    echo $i;
 }
 ?>
 
@@ -27,7 +27,7 @@ $i = 1;
 do {
   echo $i;
   $i++;
-} while ($i < 10);
+} while ($i <= 10);
 ?>
 <?php
 include_once "indexFooter.php";

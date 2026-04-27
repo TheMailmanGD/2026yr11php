@@ -3,6 +3,7 @@ include_once "indexHeader.php";
 ?>
 <h1>CRUD Read</h1>
 <?php
+//only get users with status 1
 $query1 = "SELECT * FROM users WHERE status = '1'";
 //echo('<br>' . $query1 . '<br>');
 $conn = new mysqli($host, $user, $pass, $db);
