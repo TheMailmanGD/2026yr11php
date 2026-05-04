@@ -1,7 +1,7 @@
 <?php
 include_once "indexHeader.php";
 ?>
-<h1>CRUD Read</h1>     
+<h1>CRUD Read One Record</h1>     
 <!-- Code for Middle Part -->
 <?php 
 $id = htmlspecialchars($_POST['id']);
@@ -50,7 +50,6 @@ echo ($output);
 // echo "<table><tr><th>ID</th><th>Code</th><th>Name</th><th>Email</th><th>Status</th></tr>";
 // $row = $result->fetch_assoc();
 // echo "<tr><td>" . $row["id"]. "</td><td>" . $row["code"]. "</td><td>" . $row["first_name"]. " " . $row["last_name"] . "</td><td>" . $row["email"] . "</td><td>" . $row["status"] . "</td></tr>";
-
 ?>
 <?php
 include_once "indexFooter.php";
