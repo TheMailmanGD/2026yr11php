@@ -38,6 +38,7 @@
                   <a class="dropdown-item" href="crudRead.php">Read</a>
                   <a class="dropdown-item" href="crudReadOneRecord.php">Read one record</a>
                   <a class="dropdown-item" href="crudUpdate.php">Update</a>
+                  <a class="dropdown-item" href="crudUpdateWithModal.php">Update With Modal</a>
                   <a class="dropdown-item" href="crudDelete.php">Delete</a>
                 </div>
               </li>

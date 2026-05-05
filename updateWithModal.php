@@ -1,7 +1,7 @@
 <?php
 include_once "indexHeader.php";
 ?>
-<h1>CRUD Read One Record</h1>     
+<h1>CRUD Update With Modal</h1>     
 <!-- Code for Middle Part -->
 <?php 
 $id = htmlspecialchars($_POST['id']);
@@ -23,6 +23,7 @@ if($result){ // querry runs
                             <th>Last name</th>
                             <th>Email</th>
                             <th>Status</th>
+                            <th>Operations</th>
                         </tr>';
         while($row = mysqli_fetch_array($result)){
             $output .=  '<tr>
@@ -32,6 +33,11 @@ if($result){ // querry runs
                             <td>'. $row["last_name"] .'</td>
                             <td>'. $row["email"] .'</td>
                             <td>'. $row["status"] .'</td>
+                            <td>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                              Edit
+                            </button>
+                            </td>
                         </tr>';
         }
         $output .=  "</table>";
@@ -43,15 +49,7 @@ if($result){ // querry runs
 }
 echo ($output);
 ?>
-<!-- my code, worse looking table, but simpler -->
 <?php
-// $sql = "SELECT * FROM users WHERE id={$_POST['id']}";
-// $result = $conn->query($sql);
-
-// echo "<table><tr><th>ID</th><th>Code</th><th>Name</th><th>Email</th><th>Status</th></tr>";
-// $row = $result->fetch_assoc();
-// echo "<tr><td>" . $row["id"]. "</td><td>" . $row["code"]. "</td><td>" . $row["first_name"]. " " . $row["last_name"] . "</td><td>" . $row["email"] . "</td><td>" . $row["status"] . "</td></tr>";
-?>
-<?php
+include_once "modal.php";
 include_once "indexFooter.php";
 ?>
