@@ -40,6 +40,7 @@
                   <a class="dropdown-item" href="crudUpdate.php">Update</a>
                   <a class="dropdown-item" href="crudUpdateWithModal.php">Update With Modal</a>
                   <a class="dropdown-item" href="crudDelete.php">Delete</a>
+                  <a class="dropdown-item" href="crudUpdateAllWithModal.php">Update all with modal</a>
                 </div>
               </li>
             </ul>
