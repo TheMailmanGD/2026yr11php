@@ -31,7 +31,15 @@ if($result){ // querry runs
                             <td>'. $row["email"] .'</td>
                             <td>'. $row["status"] .'</td>
                             <td>
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <button 
+                            type="button" 
+                            class="btn btn-primary editBtn"  
+                            data-bs-toggle="modal" 
+                            data-bs-target="#updateAllModal"
+                            data-id="'. $row["id"] .'"
+                            data-first_name="'. $row["first_name"] .'"
+                            data-last_name="'. $row["last_name"] .'"
+                            >
                               Edit
                             </button>
                             </td>
