@@ -18,6 +18,11 @@
             <label>Last Name</label>
             <input type="text" class="form-control" id="update_last_name">
         </div>
+      
+        <div class="mb-3">
+            <label>Email</label>
+            <input type="text" class="form-control" id="update_email">
+        </div>
         <!-- <form action="update.php" method="post">
             <input type="text" name="update" placeholder="id to update">
             <input type="text" name="id" placeholder="id">
@@ -45,6 +50,7 @@ editButtons.forEach(function(btn){
         document.getElementById("update_id").value = this.dataset.id;
         document.getElementById("update_first_name").value = this.dataset.first_name;
         document.getElementById("update_last_name").value = this.dataset.last_name;
+        document.getElementById("update_email").value = this.dataset.email;
     });
 });
 
@@ -52,12 +58,13 @@ document.getElementById("saveChangesBtn").addEventListener("click", function(){
     let id = document.getElementById("update_id").value;
     let first_name = document.getElementById("update_first_name").value;
     let last_name = document.getElementById("update_last_name").value;
+    let email = document.getElementById("update_email").value;
     fetch("update_user.php", {
         method: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded"
         },
-        body: `id=${id}&first_name=${first_name}&last_name=${last_name}`
+        body: `id=${id}&first_name=${first_name}&last_name=${last_name}&email=${email}`
     })
     .then(response => response.text())
     .then(data => {

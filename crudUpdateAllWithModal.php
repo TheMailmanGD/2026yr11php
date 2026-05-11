@@ -39,6 +39,7 @@ if($result){ // querry runs
                             data-id="'. $row["id"] .'"
                             data-first_name="'. $row["first_name"] .'"
                             data-last_name="'. $row["last_name"] .'"
+                            data-email="'. $row["email"] .'"
                             >
                               Edit
                             </button>
