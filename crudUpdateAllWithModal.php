@@ -47,6 +47,6 @@ if($result){ // querry runs
 echo ($output);
 ?>
 <?php
-include_once "indexFooter.php";
 include_once "modal.php";
+include_once "indexFooter.php";
 ?>
