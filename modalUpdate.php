@@ -2,7 +2,12 @@
 include_once "indexHeader.php";
 ?>
 <?php
-$sql = "UPDATE users SET id='{$_POST['id']}', code='{$_POST['code']}', first_name='{$_POST['first_name']}', last_name='{$_POST['last_name']}', email='{$_POST['email']}', status='{$_POST['status']}' WHERE id={$_POST['update']}";
+$id = $conn->real_escape_string($_POST['id']);
+$first_name = $conn->real_escape_string($_POST['first_name']);
+$last_name = $conn->real_escape_string($_POST['last_name']);
+$email = $conn->real_escape_string($_POST['email']);
+
+$sql = "UPDATE users SET first_name= '$first_name', last_name= '$last_name', email= '$email' WHERE id= '$id'";
 
 if ($conn->query($sql) === TRUE) {
   echo "Record updated successfully";

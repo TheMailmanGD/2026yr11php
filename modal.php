@@ -23,7 +23,7 @@
             <label>Email</label>
             <input type="text" class="form-control" id="update_email">
         </div>
-        <!-- <form action="update.php" method="post">
+        ​‌‌‌⁡⁢⁣⁢<!-- <form action="update.php" method="post">
             <input type="text" name="update" placeholder="id to update">
             <input type="text" name="id" placeholder="id">
             <input type="text" name="code" placeholder="code">
@@ -32,7 +32,7 @@
             <input type="text" name="email" placeholder="email">
             <input type="text" name="status" placeholder="status">
             <input type="submit" value="Save Changes">
-        </form> -->
+        </form> -->⁡​
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-primary" id="saveChangesBtn">Save Changes</button>
@@ -59,7 +59,7 @@ document.getElementById("saveChangesBtn").addEventListener("click", function(){
     let first_name = document.getElementById("update_first_name").value;
     let last_name = document.getElementById("update_last_name").value;
     let email = document.getElementById("update_email").value;
-    fetch("update_user.php", {
+    fetch("modalUpdate.php", {
         method: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded"
@@ -68,7 +68,6 @@ document.getElementById("saveChangesBtn").addEventListener("click", function(){
     })
     .then(response => response.text())
     .then(data => {
-        alert(data);
         location.reload();
     });
 });
