@@ -121,5 +121,6 @@
 <?php
 include_once "indexMenubar.php";
 include_once "connect.php";
+include_once 'a_message.php';
 ?>
 <div class="container marketing">
