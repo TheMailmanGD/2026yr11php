@@ -14,6 +14,11 @@
         <input class="form-control" type="text" name="email" id="email" placeholder="Email" required />
     <label for="inputPassword">Email</label>
     </div>
+<h5>Password | 6-12 characters* </h5>
+    <div class="form-floating mb-3">
+        <input class="form-control" type="text" name="password" id="password" placeholder="Password" required />
+    <label for="inputPassword">Password</label>
+    </div>
     <div class="d-grid gap-2">
     <button class="btn btn-primary btn-block" type="submit">Sign up</button>
     </div>

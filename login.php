@@ -15,5 +15,10 @@ else
         echo "Login ID not found";
     }
 }
-
 ?>
+<html>
+    <form action="index.php" method="post">
+        <input type="text" name="password" placeholder="Password">
+        <input type="submit" value="Login">
+    </form>
+</html>

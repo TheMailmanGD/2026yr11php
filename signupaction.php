@@ -4,7 +4,7 @@ include_once "connect.php";
 <?php
 $conn = new mysqli($host, $user, $pass, $db);
 
-$sql = "INSERT INTO users (id, code, first_name, last_name, email, status) VALUES (NULL, '', '{$_POST['first_name']}', '{$_POST['last_name']}', '{$_POST['email']}', '1')";
+$sql = "INSERT INTO users (id, code, pass, first_name, last_name, email, status) VALUES (NULL, '', '{$_POST['password']}', '{$_POST['first_name']}', '{$_POST['last_name']}', '{$_POST['email']}', '1')";
 mysqli_query($conn, $sql);
 
 $new = mysqli_insert_id($conn);
