@@ -43,13 +43,20 @@
                   <a class="dropdown-item" href="crudUpdateAllWithModal.php">Update all with modal</a>
                 </div>
               </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="signup.php">Signup</a>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Payslip Project</a>
+              </li>
             </ul>
-            <form class="d-flex" role="search">
+            <form class="d-flex" role="search" method="post" action="login.php">
               <input
                 class="form-control me-2"
                 type="search"
                 placeholder="Login ID"
                 aria-label="Search"
+                name="loginID"
               />
               <button class="btn btn-outline-success" type="submit">
                 Login
