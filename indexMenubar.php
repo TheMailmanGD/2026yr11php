@@ -50,8 +50,8 @@
         <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">PayProj</a>
           <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="crudCreatePayslip.php">Create Payslip</a></li>
-          <li><a class="dropdown-item" href="crudFindPayslip.php">Find payslip</a></li>
+          <li><a class="dropdown-item" href="projCreatePayslip.php">Create Payslip</a></li>
+          <li><a class="dropdown-item" href="projFindPayslip.php">Find payslip</a></li>
           </ul>
         </li>
         <?php } ?>
