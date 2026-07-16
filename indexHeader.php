@@ -25,7 +25,7 @@ session_start();
     <link href="./css/carousel.css" rel="stylesheet" />
     <link href="./css/myBootstrapStyle.css" rel="stylesheet" />
     <link href="./css/myStyle.css" rel="stylesheet" />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   </head>
   <body>
     <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
