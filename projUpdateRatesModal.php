@@ -84,7 +84,13 @@
                         value="<?php echo $_SESSION["session_end_time"] ?>">
                 </div>
             </div>
-
+            <div class="row mb-0">
+                <label class="col-sm-5 col-form-label">Break Mins</label>
+                <div class="col-sm-7">
+                    <input type="number" step="1" name="break_mins" id="break_mins" class="form-control form-control-sm" 
+                        value='<?php echo $_SESSION["session_break_mins"] ?>'>
+                </div>
+            </div>
             <br>
             <input type="submit" class="btn btn-primary btn-success" value="Update Rates">
         </form>

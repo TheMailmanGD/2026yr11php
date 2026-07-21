@@ -180,8 +180,21 @@ $_SESSION["session_break_mins"] = $row['break_mins'];
                             <td>'. $row["end_day_holi"] .'</td>
                                 <td>
                                     <div class="d-flex justify-content-between align-items-center">
-                                        <a href="projShiftEdit.php?id='.$row['id'].'">
-                                        <i class="fas fa-edit text-primary"></i>
+                                        <a href="#"
+                                            class="btn-edit-shift"
+                                            data-id="'. $row['id'] .'"
+                                            data-shift-date="'. htmlspecialchars($row['shift_date'], ENT_QUOTES, 'UTF-8') .'"
+                                            data-start-time="'. htmlspecialchars($row['start_time'], ENT_QUOTES, 'UTF-8') .'"
+                                            data-end-time="'. htmlspecialchars($row['end_time'], ENT_QUOTES, 'UTF-8') .'"
+                                            data-break-mins="'. htmlspecialchars($row['break_minutes'], ENT_QUOTES, 'UTF-8') .'"
+                                            data-start-holi="'. ($row['start_day_holi'] ? '1' : '0') .'"
+                                            data-end-holi="'. ($row['end_day_holi'] ? '1' : '0') .'"
+                                            data-rate="'. htmlspecialchars($row['rate'], ENT_QUOTES, 'UTF-8') .'"
+                                            data-pm-allow="'. htmlspecialchars($row['shift_allow'], ENT_QUOTES, 'UTF-8') .'"
+                                            data-uniform="'. htmlspecialchars($row['uniform'], ENT_QUOTES, 'UTF-8') .'"
+                                            data-laundry="'. htmlspecialchars($row['laundry'], ENT_QUOTES, 'UTF-8') .'"
+                                            data-bs-toggle="modal" data-bs-target="#shift_edit_modal">
+                                            <i class="fas fa-edit text-primary"></i>
                                         </a>
                                         <a href="projShiftDelete.php?id='.$row['id'].'"
                                         onclick="return confirm(\'Delete this record?\');">
@@ -203,8 +216,39 @@ $_SESSION["session_break_mins"] = $row['break_mins'];
     </div>
 </div>
 </div>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const editButtons = document.querySelectorAll('.btn-edit-shift');
+    const modal = document.getElementById('shift_edit_modal');
+
+    editButtons.forEach(function (button) {
+        button.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            const form = modal.querySelector('form');
+            if (!form) {
+                return;
+            }
+
+            form.querySelector('[name="id"]').value = this.getAttribute('data-id') || '';
+            form.querySelector('[name="shift_date"]').value = this.getAttribute('data-shift-date') || '';
+            form.querySelector('[name="start_time"]').value = this.getAttribute('data-start-time') || '';
+            form.querySelector('[name="end_time"]').value = this.getAttribute('data-end-time') || '';
+            form.querySelector('[name="break_mins"]').value = this.getAttribute('data-break-mins') || '';
+            form.querySelector('[name="start_day_holi"]').checked = this.getAttribute('data-start-holi') === '1';
+            form.querySelector('[name="end_day_holi"]').checked = this.getAttribute('data-end-holi') === '1';
+            form.querySelector('[name="rate"]').value = this.getAttribute('data-rate') || '';
+            form.querySelector('[name="pm_allow"]').value = this.getAttribute('data-pm-allow') || '';
+            form.querySelector('[name="uniform"]').value = this.getAttribute('data-uniform') || '';
+            form.querySelector('[name="laundry"]').value = this.getAttribute('data-laundry') || '';
+        });
+    });
+});
+</script>
+
 <?php
 include_once "indexFooter.php";
 include_once "projUpdateRatesModal.php";
 include_once "projAddShiftModal.php";
+include_once "projShiftEditModal.php";
 ?>

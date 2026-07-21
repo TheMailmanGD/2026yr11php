@@ -9,6 +9,7 @@
       <!-- Modal body -->
       <div class="modal-body">
         <form action="projEditShiftAction.php" method="POST">
+            <input type="hidden" name="id" id="shift_id">
             <div class="row mb-0">
                 <label class="col-sm-5 col-form-label">Shift Date</label>
                 <div class="col-sm-7">
