@@ -15,5 +15,6 @@ if ($stmt) {
 } else {
 	echo "Prepare failed: " . $conn->error;
 }
+header("Location: projCreatePayslip.php");
 include_once "indexFooter.php";
 ?>
